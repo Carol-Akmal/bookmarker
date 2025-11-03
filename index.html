@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h1 class="fw-bold display-4 mb-4">Bookmarker</h1>
+        <hr class="dotted-hr">
+
+        <p class="mb-4">
+            <i class="fa-solid fa-bookmark me-2"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark ms-2"></i>
+        </p>
+
+        <form id="bookmarkForm" class="mx-auto w-75">
+            <label for="siteName" class="form-label fs-5 py-2">
+                <i class="fa-solid fa-book me-2"></i> Site Name
+            </label>
+            <input type="text" class="form-control mb-4" id="siteName" placeholder="Bookmark Name">
+
+            <label for="siteURL" class="form-label fs-5 py-2">
+                <i class="fa-solid fa-link me-2"></i> Site URL
+            </label>
+            <input type="url" class="form-control mb-4" id="siteURL" placeholder="Website URL">
+
+            <button type="submit" class="btn btn-danger btn-lg w-25">Submit</button>
+            <hr class="dotted-hr mt-4">
+        </form>
+
+        <table class="table mt-4">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

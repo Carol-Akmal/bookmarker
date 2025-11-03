@@ -1,0 +1,39 @@
+body {
+    background-color: #f7ecee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+label {
+    font-size: 18px;
+}
+
+input.form-control {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.dotted-hr {
+    border-top: 3px dotted #000;
+}
+
+.table {
+    max-width: 800px;
+    margin: 0 auto;
+}
